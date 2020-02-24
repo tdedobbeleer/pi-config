@@ -1,0 +1,5 @@
+proc            /proc           proc    defaults          0       0
+PARTUUID=bb0deff1-01  /boot           vfat    defaults          0       2
+PARTUUID=bb0deff1-02  /               ext4    defaults,noatime  0       1
+//192.168.1.10/backup	/backup	cifs	auto,x-systemd.automount,echo_interval=60,uid=pi,credentials=/home/pi/.smbcredentials,sec=ntlm,vers=3.0	0	0
+//192.168.1.10/pi	/pi	cifs	auto,x-systemd.automount,echo_interval=60,uid=pi,credentials=/home/pi/.smbcredentials,sec=ntlm,vers=3.0  0       0
